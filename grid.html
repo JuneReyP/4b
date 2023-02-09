@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            text-decoration: none;
+        }
+        .grid-container{
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            height: 90vh;
+        }
+        .left{
+            /* background-color: aqua; */
+            margin: 2px;
+            padding: 20px;
+        }
+        .main{
+            /* background-color: orange; */
+            margin: 2px;
+        }
+        .rigth{
+            /* background-color: rgb(226, 43, 217); */
+            margin: 2px;
+        }
+        .nav{
+            text-align: right;
+            margin-right: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- this is for my nav bar start -->
+        <div class="nav">
+            <a href="#">Home</a>
+            <a href="#">content</a>
+            <a href="#">about</a>
+        </div>
+        <!-- this is for my nav bar end -->
+        <!-- for content area start -->
+        <div class="grid-container">
+            <div class="left">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQI9O7l8dQVrqzoTCr2Cgo9cP9ht0esIz4N2A5Ve04&s" alt="">
+            </div>
+            <div class="main">Main</div>
+            <div class="rigth">Rigth</div>
+        </div>
+        <!-- for content area end -->
+        <!-- footer start -->
+        <div>
+            <footer>
+                My Footer
+            </footer>
+        </div>
+        <!-- footer end -->
+    </div>
+</body>
+</html>
