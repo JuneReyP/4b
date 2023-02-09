@@ -14,7 +14,8 @@
         .grid-container{
             display: grid;
             grid-template-columns: 1fr 2fr 1fr;
-            height: 90vh;
+            height: 100vh;
+            margin-top: 5px;
         }
         .left{
             /* background-color: aqua; */
@@ -24,14 +25,32 @@
         .main{
             /* background-color: orange; */
             margin: 2px;
+            padding: 20px;
         }
         .rigth{
             /* background-color: rgb(226, 43, 217); */
             margin: 2px;
+            padding: 20px;
         }
         .nav{
             text-align: right;
             margin-right: 15px;
+        }
+
+        /* 0px - 780px */
+        @media screen and (max-width: 780px) { 
+           .grid-container{
+            display: grid;
+            grid-template-columns: 50vw 50vw;
+           }
+        }
+
+        /* 0px - 480px */
+        @media screen and (max-width: 480px) { 
+            .grid-container{
+                display: grid;
+                grid-template-columns: 100vw;
+            }
         }
     </style>
 </head>
@@ -50,10 +69,13 @@
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQI9O7l8dQVrqzoTCr2Cgo9cP9ht0esIz4N2A5Ve04&s" alt="">
             </div>
             <div class="main">
-                <h1>Sample</h1>
+                <h1>Sample Center Item</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius nam exercitationem dolores maiores aspernatur beatae quam vel enim, accusamus, possimus atque repellat perferendis animi? Nisi nemo explicabo accusamus eius voluptatum!</p>
             </div>
-            <div class="rigth">Rigth</div>
+            <div class="rigth">
+                <h1>Sample Last item</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius nam exercitationem dolores maiores aspernatur beatae quam vel enim, accusamus, possimus atque repellat perferendis animi? Nisi nemo explicabo accusamus eius voluptatum!</p>
+            </div>
         </div>
         <!-- for content area end -->
         <!-- footer start -->
