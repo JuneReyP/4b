@@ -9,7 +9,7 @@
         div{
             margin-top: 1px;
             border: 1px solid;
-            color: red;
+            /* color: red; */
         }
         img{
             width: 140px;
@@ -29,7 +29,7 @@
     <link rel="stylesheet" href="akonDesign.css">
 </head>
 <body>
-    <p class="content text" id="sample" style="background-color: aquamarine; padding: 5px; margin: 0px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus corporis ullam laudantium, eligendi cum illum ad architecto magnam? Sunt, nisi eum! Tenetur quaerat quasi voluptatibus laboriosam quidem dolore? Saepe, itaque.
+    <!-- <p class="content text" id="sample" style="background-color: aquamarine; padding: 5px; margin: 0px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus corporis ullam laudantium, eligendi cum illum ad architecto magnam? Sunt, nisi eum! Tenetur quaerat quasi voluptatibus laboriosam quidem dolore? Saepe, itaque.
     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus deserunt quidem recusandae ab ducimus earum, sed numquam distinctio, dignissimos autem quod sequi molestias ipsa, error accusamus! Voluptas quisquam libero voluptate.</p>
     <div style="padding: 5px; width: 150px; height: 150px;">
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQI9O7l8dQVrqzoTCr2Cgo9cP9ht0esIz4N2A5Ve04&s" alt="">
@@ -41,7 +41,30 @@
         <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi, numquam recusandae? Tempora, inventore placeat sapiente excepturi ratione minus. Culpa aspernatur accusantium inventore a vel tempore et, sequi dolores similique maiores.
         </p>
-    </div>
+    </div> -->
+<div style="text-align: center; margin-top: 30px; padding-top: 15px;">
+    <button onclick="document.getElementById('sample').innerHTML = 'I clicked the button!'" >Click Me to display Current Date</button>
+    <p id="sample">Sample text</p>
+    <br>
+    <button onclick="document.getElementById('sample').style.backgroundColor = 'yellow';">Change BGcolor</button>
+    <button onclick="alertMe()">Display Alert message</button>
+<hr>
+    <p id="output">Output here</p>
+</div>
     
+<script>
+    // document.getElementById('sample').style.backgroundColor = 'gray';
+    document.write()
+    
+    
+
+
+
+
+
+</script>
+
+<script src="sampleJS.js"></script>
+
 </body>
 </html>
