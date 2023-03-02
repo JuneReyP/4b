@@ -9,6 +9,7 @@
         div{
             margin-top: 1px;
             border: 1px solid;
+            padding: 5px;
             /* color: red; */
         }
         img{
@@ -23,6 +24,10 @@
         }
         #sample{
             color:rgb(197, 23, 209);
+        }
+        input{
+            margin: 5px;
+            padding: 3px;
         }
         
     </style>
@@ -51,17 +56,25 @@
 <hr>
     <p id="output">Output here</p>
 </div>
+<div>
+    <button onclick="tryIt()" style="margin: 20px; font-size: larger;">Sample</button>
+    <h1 id="outData"></h1>
+</div>
+<div>
+    <input type="text" id="num1">
+    <input type="text" id="num2">
+    <br>
+    <input type="button" onclick="calcu('+')" value="Add">
+    <input type="button" onclick="calcu('-')" value="Subtract">
+    <input type="button" onclick="calcu('/')" value="Divide">
+    <input type="button" onclick="calcu('*')" value="Multiply">
+    <br>
+    <h1 id="outputAnswer">Answer Here!</h1>
+</div>
     
 <script>
     // document.getElementById('sample').style.backgroundColor = 'gray';
-    document.write()
     
-    
-
-
-
-
-
 </script>
 
 <script src="sampleJS.js"></script>
